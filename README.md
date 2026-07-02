@@ -18,9 +18,11 @@
 > _Berdasarkan repositori dan aktivitas akun ini_
 
 <!--TECH_STACK_START-->
+
 <p align="center">
-  <i>Memuat tech stack dari repositori...</i>
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />
 </p>
+
 <!--TECH_STACK_END-->
 
 ## 📊 GitHub Analytics
