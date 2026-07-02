@@ -1,0 +1,43 @@
+name: AI Activity Log
+
+on:
+  schedule:
+    - cron: "0 */6 * * *"
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install dependencies
+        run: npm install --save-dev prettier
+
+      - name: Generate AI activity log
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          AI_LLM_API_KEY: ${{ secrets.AI_LLM_API_KEY }}
+          AI_LLM_BASE_URL: ${{ secrets.AI_LLM_BASE_URL }}
+          AI_LLM_MODEL: ${{ secrets.AI_LLM_MODEL }}
+        run: node scripts/generate-ai-blog.js
+
+      - name: Format README
+        run: npx prettier --write README.md || true
+
+      - name: Commit changes
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: update AI activity log [skip ci]"
+          file_pattern: README.md

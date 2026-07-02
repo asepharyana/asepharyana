@@ -1,0 +1,7 @@
+{
+  "name": "profile-readme",
+  "private": true,
+  "scripts": {
+    "generate-ai": "node scripts/generate-ai-blog.js"
+  }
+}
