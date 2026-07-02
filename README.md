@@ -15,7 +15,7 @@
 
 ## 🛠️ Tech Stack
 
-> *Berdasarkan repositori dan aktivitas akun ini*
+> _Berdasarkan repositori dan aktivitas akun ini_
 
 <!--TECH_STACK_START-->
 <p align="center">
