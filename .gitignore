@@ -1,0 +1,11 @@
+# Node.js
+node_modules/
+npm-debug.log*
+package-lock.json
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Environment (secrets template — actual secrets go to GitHub Actions)
+.env
