@@ -16,9 +16,8 @@ const MARKER_END = "<!--AI_ACTIVITY_END-->";
 const EVENTS_DAYS_BACK = 7;
 const MAX_EVENTS = 100;
 
-// -- Helpers ----------------------------------------------------
+// -- HTTP Helpers -----------------------------------------------
 
-/** Minimal HTTPS fetch returning body string */
 function fetch(url, options = {}) {
   return new Promise((resolve, reject) => {
     const req = https.get(url, { headers: options.headers || {} }, (res) => {
@@ -27,14 +26,10 @@ function fetch(url, options = {}) {
       res.on("end", () => resolve({ status: res.statusCode, data }));
     });
     req.on("error", reject);
-    req.setTimeout(15000, () => {
-      req.destroy();
-      reject(new Error("Request timeout"));
-    });
+    req.setTimeout(15000, () => { req.destroy(); reject(new Error("Request timeout")); });
   });
 }
 
-/** Post JSON to URL and return parsed response */
 function postJSON(url, body, headers = {}) {
   return new Promise((resolve, reject) => {
     const urlObj = new URL(url);
@@ -52,44 +47,86 @@ function postJSON(url, body, headers = {}) {
       res.on("end", () => resolve({ status: res.statusCode, data: raw }));
     });
     req.on("error", reject);
-    req.setTimeout(30000, () => {
-      req.destroy();
-      reject(new Error("LLM request timeout"));
-    });
+    req.setTimeout(30000, () => { req.destroy(); reject(new Error("LLM request timeout")); });
     req.write(data);
     req.end();
   });
 }
 
-/** Check if event happened within the last N days */
+function authHeaders() {
+  return {
+    "User-Agent": "generate-ai-blog",
+    Authorization: `Bearer ${GITHUB_TOKEN}`,
+    Accept: "application/vnd.github.v3+json",
+  };
+}
+
 function isRecent(createdAt, days) {
   const then = new Date(createdAt).getTime();
   const cutoff = Date.now() - days * 24 * 60 * 60 * 1000;
   return then >= cutoff;
 }
 
-/** Format a single event into readable text */
+// -- Fetch real commit data via Compare API --
+// /users/{user}/events PushEvent payload does NOT include commits[] or size.
+// We must call the Compare API to get actual commit count + messages.
+async function fetchCommitData(repoFullName, beforeSha, headSha) {
+  const url = `https://api.github.com/repos/${repoFullName}/compare/${beforeSha}...${headSha}`;
+  try {
+    const { status, data } = await fetch(url, { headers: authHeaders() });
+    if (status !== 200) return null;
+    const parsed = JSON.parse(data);
+    const total = parsed.total_commits || 0;
+    const msgs = (parsed.commits || [])
+      .slice(0, 3)
+      .map((c) => c.commit?.message?.split("\n")[0] || "")
+      .filter(Boolean);
+    return { total, messages: msgs };
+  } catch {
+    return null;
+  }
+}
+
+// -- Enrich all PushEvents with real commit data --
+async function enrichPushEvents(events) {
+  const results = [];
+  for (const ev of events) {
+    if (ev.type === "PushEvent") {
+      const repo = ev.repo?.name;
+      const before = ev.payload?.before;
+      const head = ev.payload?.head;
+      if (repo && before && head && before !== head) {
+        const data = await fetchCommitData(repo, before, head);
+        if (data) {
+          results.push({ ...ev, _commitData: data });
+          continue;
+        }
+      }
+      // If Compare API fails, skip this PushEvent entirely (no data to show)
+      continue;
+    }
+    results.push(ev);
+  }
+  return results;
+}
+
+// -- Format a single event into readable text --
 function formatEvent(event) {
   const repo = event.repo?.name || "unknown";
   switch (event.type) {
     case "PushEvent": {
       const branch = (event.payload?.ref || "").replace("refs/heads/", "");
-      const commits = event.payload?.commits || [];
-      const size = event.payload?.size || commits.length;
-      const msgs = commits
-        .slice(0, 3)
-        .map((c) => c.message?.split("\n")[0] || "no message")
-        .filter(Boolean);
-      const countLabel = `${size} commit${size > 1 ? "s" : ""}`;
-      if (msgs.length > 0) {
-        return `• Push ${countLabel} ke \`${repo}\` (${branch}): ${msgs.join("; ")}`;
+      const cd = event._commitData;
+      if (!cd || cd.total === 0) return null; // no data to show
+      const label = `${cd.total} commit${cd.total > 1 ? "s" : ""}`;
+      if (cd.messages.length > 0) {
+        return `• Push ${label} ke \`${repo}\` (${branch}): ${cd.messages.join("; ")}`;
       }
-      return `• Push ${countLabel} ke \`${repo}\` (${branch})`;
+      return `• Push ${label} ke \`${repo}\` (${branch})`;
     }
     case "CreateEvent": {
       const refType = event.payload?.ref_type || "";
       const ref = event.payload?.ref || refType;
-      // Skip branch creations (usually noisy — CI/initial setup)
       if (refType === "branch") return null;
       return `• Membuat ${refType} baru: \`${ref}\` di \`${repo}\``;
     }
@@ -117,7 +154,6 @@ function formatEvent(event) {
   }
 }
 
-/** Deduplicate events: group same repo + type, limit to 8 entries */
 function deduplicate(events) {
   const seen = new Set();
   const result = [];
@@ -135,23 +171,20 @@ function deduplicate(events) {
 // -- Main -------------------------------------------------------
 
 async function main() {
+  const start = Date.now();
   console.log("[AI Blog] Starting...");
 
-  // 1. Fetch GitHub events
   if (!GITHUB_TOKEN) {
-    console.log("[AI Blog] No GITHUB_TOKEN, skipping activity fetch");
+    console.log("[AI Blog] No GITHUB_TOKEN, skipping");
     writeFallback();
     return;
   }
 
-  const eventsUrl = `https://api.github.com/users/${GITHUB_USER}/events?per_page=${MAX_EVENTS}`;
-  const { status, data } = await fetch(eventsUrl, {
-    headers: {
-      "User-Agent": "generate-ai-blog",
-      Authorization: `Bearer ${GITHUB_TOKEN}`,
-      Accept: "application/vnd.github.v3+json",
-    },
-  });
+  // 1. Fetch raw events
+  const { status, data } = await fetch(
+    `https://api.github.com/users/${GITHUB_USER}/events?per_page=${MAX_EVENTS}`,
+    { headers: authHeaders() }
+  );
 
   if (status !== 200) {
     console.log(`[AI Blog] GitHub API returned ${status}, keeping existing content`);
@@ -159,61 +192,35 @@ async function main() {
   }
 
   let events;
-  try {
-    events = JSON.parse(data);
-  } catch {
-    console.log("[AI Blog] Failed to parse GitHub API response");
-    writeFallback();
-    return;
-  }
+  try { events = JSON.parse(data); } catch { writeFallback(); return; }
+  if (!Array.isArray(events) || events.length === 0) { writeFallback(); return; }
 
-  if (!Array.isArray(events) || events.length === 0) {
-    console.log("[AI Blog] No events found");
-    writeFallback();
-    return;
-  }
-
-  // 2. Filter: recent + relevant event types, and exclude profile repo itself
+  // 2. Filter: recent + relevant types + exclude profile repo
   const profileRepo = `${GITHUB_USER}/${GITHUB_USER}`;
   const relevantTypes = ["PushEvent", "CreateEvent", "PullRequestEvent", "IssuesEvent", "WatchEvent", "ForkEvent"];
   const recent = events.filter(
-    (e) =>
-      isRecent(e.created_at, EVENTS_DAYS_BACK) &&
-      relevantTypes.includes(e.type) &&
-      e.repo?.name !== profileRepo
+    (e) => isRecent(e.created_at, EVENTS_DAYS_BACK) && relevantTypes.includes(e.type) && e.repo?.name !== profileRepo
   );
+  if (recent.length === 0) { console.log("[AI Blog] No recent activity"); writeFallback(); return; }
 
-  if (recent.length === 0) {
-    console.log("[AI Blog] No recent activity found");
-    writeFallback();
-    return;
-  }
-
-  // 3. Format and deduplicate
+  // 3. Deduplicate
   const deduped = deduplicate(recent);
-  const formatted = deduped
-    .map(formatEvent)
-    .filter(Boolean)
-    .join("\n");
 
-  if (!formatted) {
-    console.log("[AI Blog] No meaningful activity after filtering");
-    writeFallback();
-    return;
-  }
-  console.log(`[AI Blog] Found ${deduped.length} unique events:\n${formatted}`);
+  // 4. Enrich PushEvents with real commit data (calls Compare API)
+  const enriched = await enrichPushEvents(deduped);
 
-  // 4. Build LLM prompt
-  const prompt = `Buat summary aktivitas GitHub dalam bahasa Indonesia kasual, maksimal 3 kalimat, pakai emoji. Jangan pake format list. Langsung kontennya aja, tanpa intro:\n\n${formatted}`;
+  // 5. Format
+  const formatted = enriched.map(formatEvent).filter(Boolean).join("\n");
+  if (!formatted) { console.log("[AI Blog] No meaningful activity"); writeFallback(); return; }
 
-  // 5. Call LLM
-  if (!AI_API_KEY) {
-    console.log("[AI Blog] No AI_API_KEY, using raw activity text");
-    writeContent(formatted, formatted);
-    return;
-  }
+  console.log(`[AI Blog] ${enriched.length} events enriched in ${Date.now() - start}ms:\n${formatted}`);
 
-  const chatUrl = `${AI_BASE_URL}/chat/completions`;
+  // 6. Build LLM prompt
+  const prompt = `Buat summary aktivitas GitHub dalam bahasa Indonesia kasual, maksimal 3 kalimat, pakai emoji. Jangan pake format list. Langsung kontennya aja:\n\n${formatted}`;
+
+  // 7. Call LLM
+  if (!AI_API_KEY) { writeContent(formatted); return; }
+
   const payload = {
     model: AI_MODEL,
     messages: [{ role: "user", content: prompt }],
@@ -224,52 +231,41 @@ async function main() {
   console.log(`[AI Blog] Calling LLM at ${AI_BASE_URL}...`);
   let llmResult;
   try {
-    const llmResp = await postJSON(chatUrl, payload, {
-      Authorization: `Bearer ${AI_API_KEY}`,
-    });
-    console.log(`[AI Blog] LLM response status: ${llmResp.status}`);
-
-    if (llmResp.status === 200) {
-      const parsed = JSON.parse(llmResp.data);
+    const resp = await postJSON(`${AI_BASE_URL}/chat/completions`, payload, { Authorization: `Bearer ${AI_API_KEY}` });
+    console.log(`[AI Blog] LLM response status: ${resp.status}`);
+    if (resp.status === 200) {
+      const parsed = JSON.parse(resp.data);
       llmResult = parsed.choices?.[0]?.message?.content?.trim();
     }
   } catch (err) {
     console.log(`[AI Blog] LLM call failed: ${err.message}`);
   }
-
-  const summary = llmResult || formatted.slice(0, 300);
-  writeContent(summary, formatted);
+  writeContent(llmResult || formatted.slice(0, 300));
 }
 
-/** Write content between README markers */
 function writeContent(summary) {
-  if (!fs.existsSync(README_PATH)) {
-    console.error(`[AI Blog] README.md not found at ${README_PATH}`);
-    process.exit(0);
-  }
-
+  if (!fs.existsSync(README_PATH)) { console.error(`[AI Blog] README.md not found`); process.exit(0); }
   let readme = fs.readFileSync(README_PATH, "utf-8");
   const startIdx = readme.indexOf(MARKER_START);
   const endIdx = readme.indexOf(MARKER_END);
-
-  if (startIdx === -1 || endIdx === -1) {
-    console.error("[AI Blog] Section markers not found in README.md");
-    process.exit(0);
-  }
-
+  if (startIdx === -1 || endIdx === -1) { console.error("[AI Blog] Markers not found"); process.exit(0); }
   const before = readme.slice(0, startIdx + MARKER_START.length);
   const after = readme.slice(endIdx);
-  const middle = `\n\n<p align="center">\n  <i>${summary}</i>\n</p>\n\n`;
-  const newReadme = before + middle + after;
-
-  fs.writeFileSync(README_PATH, newReadme, "utf-8");
+  const middle = `\n\n<p align="center">\n  <i>${escapeHtml(summary)}</i>\n</p>\n\n`;
+  fs.writeFileSync(README_PATH, before + middle + after, "utf-8");
   console.log("[AI Blog] README.md updated successfully");
 }
 
-/** Write fallback text when no activity is found */
+function escapeHtml(text) {
+  return String(text)
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;");
+}
+
 function writeFallback() {
-  const fallback = "▸ Belum ada aktivitas GitHub dalam 7 hari terakhir. Pantau terus! 🚀";
-  writeContent(fallback);
+  writeContent("▸ Belum ada aktivitas GitHub dalam 7 hari terakhir. Pantau terus! 🚀");
 }
 
 main().catch((err) => {
