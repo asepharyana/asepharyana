@@ -48,7 +48,8 @@
 <!--AI_ACTIVITY_START-->
 
 <p align="center">
-  <i>▸ Belum ada aktivitas GitHub dalam 7 hari terakhir. Pantau terus! 🚀</i>
+  <i>• 🍴 Fork `ryo-ma/github-profile-trophy`
+• 🍴 Fork `anuraghazra/github-readme-stats`</i>
 </p>
 
 <!--AI_ACTIVITY_END-->
