@@ -43,7 +43,7 @@
 
 ## ⏱️ WakaTime
 
-> *Coding activity, tracked by WakaTime*
+> _Coding activity, tracked by WakaTime_
 
 <p align="center">
   <img src="https://github-stats-extended.vercel.app/api/wakatime?username=MythEclipse&theme=tokyonight&hide_border=true" />
@@ -56,8 +56,7 @@
 <!--AI_ACTIVITY_START-->
 
 <p align="center">
-  <i>• 🍴 Fork `ryo-ma/github-profile-trophy`
-• 🍴 Fork `anuraghazra/github-readme-stats`</i>
+  <i>▸ Belum ada aktivitas GitHub dalam 7 hari terakhir. Pantau terus! 🚀</i>
 </p>
 
 <!--AI_ACTIVITY_END-->
