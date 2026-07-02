@@ -79,11 +79,16 @@ function formatEvent(event) {
         .slice(0, 3)
         .map((c) => c.message?.split("\n")[0] || "no message")
         .filter(Boolean);
-      return `• Push ${commits.length} commit${commits.length > 1 ? "s" : ""} ke \`${repo}\` (${branch}): ${msgs.join("; ")}`;
+      if (commits.length > 0) {
+    return `• Push ${commits.length} commit${commits.length > 1 ? "s" : ""} ke \`${repo}\` (${branch}): ${msgs.join("; ")}`;
+  }
+  return `• Push ke \`${repo}\` (${branch})`;
     }
     case "CreateEvent": {
       const refType = event.payload?.ref_type || "";
       const ref = event.payload?.ref || refType;
+      // Skip branch creations (usually noisy — CI/initial setup)
+      if (refType === "branch") return null;
       return `• Membuat ${refType} baru: \`${ref}\` di \`${repo}\``;
     }
     case "PullRequestEvent": {
@@ -166,13 +171,14 @@ async function main() {
     return;
   }
 
-  // 2. Filter to recent + relevant event types
+  // 2. Filter: recent + relevant event types, and exclude profile repo itself
+  const profileRepo = `${GITHUB_USER}/${GITHUB_USER}`;
+  const relevantTypes = ["PushEvent", "CreateEvent", "PullRequestEvent", "IssuesEvent", "WatchEvent", "ForkEvent"];
   const recent = events.filter(
     (e) =>
       isRecent(e.created_at, EVENTS_DAYS_BACK) &&
-      ["PushEvent", "CreateEvent", "PullRequestEvent", "IssuesEvent", "WatchEvent", "ForkEvent"].includes(
-        e.type
-      )
+      relevantTypes.includes(e.type) &&
+      e.repo?.name !== profileRepo
   );
 
   if (recent.length === 0) {
@@ -183,7 +189,16 @@ async function main() {
 
   // 3. Format and deduplicate
   const deduped = deduplicate(recent);
-  const formatted = deduped.map(formatEvent).join("\n");
+  const formatted = deduped
+    .map(formatEvent)
+    .filter(Boolean)
+    .join("\n");
+
+  if (!formatted) {
+    console.log("[AI Blog] No meaningful activity after filtering");
+    writeFallback();
+    return;
+  }
   console.log(`[AI Blog] Found ${deduped.length} unique events:\n${formatted}`);
 
   // 4. Build LLM prompt
