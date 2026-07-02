@@ -6,7 +6,7 @@
 </div>
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=22&pause=1000&color=667EEA&center=true&vCenter=true&random=false&width=435&lines=Building+the+future+with+AI+%F0%9F%9A%80;Always+learning%2C+always+building;Open+source+enthusiast" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=22&pause=1000&color=667EEA&center=true&vCenter=true&random=false&width=435&lines=Building+the+future+with+AI+%F0%9F%9A%80;Always+learning%2C+always+building;Vibe+coder+%F0%9F%92%BB" alt="Typing SVG" />
 </p>
 
 <p align="center">
@@ -78,8 +78,8 @@
   <a href="https://www.linkedin.com/in/asep-haryana-saputra-2014a5294/">
     <img src="https://img.shields.io/badge/LinkedIn-asep%20haryana%20saputra-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" />
   </a>
-  <a href="mailto:asepharyanasaputra@gmail.com">
-    <img src="https://img.shields.io/badge/Email-asepharyanasaputra@gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white" />
+  <a href="mailto:superaseph@gmail.com">
+    <img src="https://img.shields.io/badge/Email-superaseph@gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white" />
   </a>
 </p>
 
