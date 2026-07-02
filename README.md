@@ -29,15 +29,15 @@
 
 <p align="center">
   <a href="https://github.com/asepharyana">
-    <img height="180em" src="https://github-readme-stats.vercel.app/api?username=asepharyana&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true" />
+    <img height="180em" src="https://github-stats-extended.vercel.app/api?username=asepharyana&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true" />
     <img height="180em" src="https://github-readme-streak-stats.herokuapp.com/?user=asepharyana&theme=tokyonight&hide_border=true" />
-    <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=asepharyana&layout=compact&theme=tokyonight&hide_border=true&langs_count=8" />
+    <img height="180em" src="https://github-stats-extended.vercel.app/api/top-langs/?username=asepharyana&layout=compact&theme=tokyonight&hide_border=true&langs_count=8" />
   </a>
 </p>
 
 <p align="center">
   <a href="https://github.com/asepharyana">
-    <img src="https://github-profile-trophy.vercel.app/?username=asepharyana&theme=tokyonight&no-frame=true&row=1&column=7&margin-w=15" />
+    <img src="https://trophygithubreadmelang.cybee.dpdns.org/?username=asepharyana&theme=tokyonight&no-frame=true&row=1&column=7" />
   </a>
 </p>
 
