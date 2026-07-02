@@ -41,6 +41,14 @@
   </a>
 </p>
 
+## ⏱️ WakaTime
+
+> *Coding activity, tracked by WakaTime*
+
+<p align="center">
+  <img src="https://github-stats-extended.vercel.app/api/wakatime?username=MythEclipse&theme=tokyonight&hide_border=true" />
+</p>
+
 ## 🤖 AI Activity Log
 
 > _Aktivitas GitHub terbaru, dirangkum oleh AI_
