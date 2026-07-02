@@ -75,14 +75,16 @@ function formatEvent(event) {
     case "PushEvent": {
       const branch = (event.payload?.ref || "").replace("refs/heads/", "");
       const commits = event.payload?.commits || [];
+      const size = event.payload?.size || commits.length;
       const msgs = commits
         .slice(0, 3)
         .map((c) => c.message?.split("\n")[0] || "no message")
         .filter(Boolean);
-      if (commits.length > 0) {
-    return `• Push ${commits.length} commit${commits.length > 1 ? "s" : ""} ke \`${repo}\` (${branch}): ${msgs.join("; ")}`;
-  }
-  return `• Push ke \`${repo}\` (${branch})`;
+      const countLabel = `${size} commit${size > 1 ? "s" : ""}`;
+      if (msgs.length > 0) {
+        return `• Push ${countLabel} ke \`${repo}\` (${branch}): ${msgs.join("; ")}`;
+      }
+      return `• Push ${countLabel} ke \`${repo}\` (${branch})`;
     }
     case "CreateEvent": {
       const refType = event.payload?.ref_type || "";
