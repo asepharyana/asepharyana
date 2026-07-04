@@ -56,7 +56,7 @@
 <!--AI_ACTIVITY_START-->
 
 <p align="center">
-  <i>▸ Belum ada aktivitas GitHub dalam 7 hari terakhir. Pantau terus! 🚀</i>
+  <i>• 🍴 Fork `aula-id/koma`</i>
 </p>
 
 <!--AI_ACTIVITY_END-->
