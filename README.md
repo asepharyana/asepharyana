@@ -56,7 +56,8 @@
 <!--AI_ACTIVITY_START-->
 
 <p align="center">
-  <i>• 🍴 Fork `aula-id/koma`</i>
+  <i>• Push 2 commits ke `asepharyana/koma` (main): feat(build): add --link option to create a symlink for the built binary; feat(code-graph): tree-sitter AST parsing, petgraph, multi-language, incremental update
+• 🍴 Fork `aula-id/koma`</i>
 </p>
 
 <!--AI_ACTIVITY_END-->
