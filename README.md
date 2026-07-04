@@ -57,7 +57,7 @@
 <!--AI_ACTIVITY_START-->
 
 <p align="center">
-  <i>• Push 2 commits ke `asepharyana/koma` (main): feat(build): add --link option to create a symlink for the built binary; feat(code-graph): tree-sitter AST parsing, petgraph, multi-language, incremental update
+  <i>• Push 1 commit ke `asepharyana/koma` (main): feat(code-graph): enhance import handling and symbol resolution for Rust
 • 🍴 Fork `aula-id/koma`</i>
 </p>
 
