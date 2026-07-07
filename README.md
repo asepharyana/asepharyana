@@ -46,9 +46,7 @@
 
 > _Coding activity, tracked by WakaTime_
 
-<figure align="center">
-  <embed src="https://wakatime.com/share/@MythEclipse/64cf4351-1af4-4e83-8b6f-0a68c30daded.svg">
-</figure>
+<figure><img src="https://wakatime.com/share/@MythEclipse/e8e61545-006a-47bc-b8e5-22c9fffae865.svg"></embed></figure>
 
 ## 🤖 AI Activity Log
 
