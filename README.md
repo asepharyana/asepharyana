@@ -21,6 +21,7 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />
+  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript" />
   <img src="https://img.shields.io/badge/Rust-000000?style=for-the-badge&logo=rust" />
 </p>
 
