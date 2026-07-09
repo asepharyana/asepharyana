@@ -57,7 +57,6 @@
 
 <p align="center">
   <i>• Push 1 commit ke `asepharyana/Booster-role` (main): Fix booster role metadata updates
-• Push 1 commit ke `asepharyana/koma` (main): feat(install.sh): add symlink support for custom build paths
 • 🍴 Fork `aula-id/koma`</i>
 </p>
 
