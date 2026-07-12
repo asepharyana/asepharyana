@@ -57,8 +57,9 @@
 <!--AI_ACTIVITY_START-->
 
 <p align="center">
-  <i>• Push 15 commits ke `asepharyana/zesdex` (main): feat: add editing and MCP command handling, enhance SSE streaming with usage tracking; chore: add dead code allowance for delete_blob function; feat: add support for Router provider and enhance command handling
-• Push 1 commit ke `asepharyana/asephar</i>
+  <i>• Push 1 commit ke `asepharyana/zesdex` (main): feat(lsp): implement auto-provisioning for language servers
+• Push 1 commit ke `asepharyana/asepharyana-hub` (main): fix: revert deploy workflow, secrets already configured
+• Push 1 commit ke `asepharyana/asepharyana-hub-react` (main): fix: resolve las</i>
 </p>
 
 <!--AI_ACTIVITY_END-->
