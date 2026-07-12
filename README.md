@@ -57,9 +57,9 @@
 <!--AI_ACTIVITY_START-->
 
 <p align="center">
-  <i>• Push 1 commit ke `asepharyana/zesdex` (main): feat(lsp): implement auto-provisioning for language servers
+  <i>• Push 1 commit ke `asepharyana/zesdex` (main): fix: reset overlay state to None after workflow actions
 • Push 1 commit ke `asepharyana/asepharyana-hub` (main): fix: revert deploy workflow, secrets already configured
-• Push 1 commit ke `asepharyana/asepharyana-hub-react` (main): fix: resolve las</i>
+• Push 1 commit ke `asepharyana/asepharyana-hub-react` (main): fix: resolve last 2 </i>
 </p>
 
 <!--AI_ACTIVITY_END-->
