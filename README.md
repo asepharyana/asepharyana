@@ -57,7 +57,7 @@
 <!--AI_ACTIVITY_START-->
 
 <p align="center">
-  <i>• Push 3 commits ke `asepharyana/zesdex` (main): feat: enhance system prompt handling and input key actions; feat: remove session hub and related commands from the application; Refactor IPC and DTO structures; remove unused code and streamline message handling
+  <i>• Push 15 commits ke `asepharyana/zesdex` (main): feat: add editing and MCP command handling, enhance SSE streaming with usage tracking; chore: add dead code allowance for delete_blob function; feat: add support for Router provider and enhance command handling
 • Push 1 commit ke `asepharyana/asephar</i>
 </p>
 
