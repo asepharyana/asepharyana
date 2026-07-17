@@ -57,8 +57,8 @@
 <!--AI_ACTIVITY_START-->
 
 <p align="center">
-  <i>• Open PR: &quot;&quot; di `asepharyana/asepharyana-hub`
-• Push 23 commits ke `asepharyana/zesdex` (main): docs(specs): tambah desain rombak context &amp; compaction; docs(specs): kecualikan tool read dari squash; docs(specs): hapus facade prepare(), panggil modul context langsung</i>
+  <i>• Push 2 commits ke `asepharyana/zesdex` (main): refactor: streamline token counting and message shaping logic; refactor: enhance message shaping with progressive summarization and improved handling of dropped messages
+• Tutup PR: &quot;&quot; di `asepharyana/asepharyana-hub`</i>
 </p>
 
 <!--AI_ACTIVITY_END-->
