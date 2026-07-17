@@ -57,8 +57,8 @@
 <!--AI_ACTIVITY_START-->
 
 <p align="center">
-  <i>• Push 23 commits ke `asepharyana/zesdex` (main): docs(specs): tambah desain rombak context &amp; compaction; docs(specs): kecualikan tool read dari squash; docs(specs): hapus facade prepare(), panggil modul context langsung
-• Push 1 commit ke `asepharyana/asepharyana-hub` (main): fix: revert deploy wor</i>
+  <i>• Open PR: &quot;&quot; di `asepharyana/asepharyana-hub`
+• Push 23 commits ke `asepharyana/zesdex` (main): docs(specs): tambah desain rombak context &amp; compaction; docs(specs): kecualikan tool read dari squash; docs(specs): hapus facade prepare(), panggil modul context langsung</i>
 </p>
 
 <!--AI_ACTIVITY_END-->
