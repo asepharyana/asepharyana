@@ -57,8 +57,8 @@
 <!--AI_ACTIVITY_START-->
 
 <p align="center">
-  <i>• Push 1 commit ke `lsar-lidm-2026/longitudinal-student-academic-record-system-lidm` (main): fix: login page design + add auth middleware for route protection
-• Push 1 commit ke `lsar-lidm-2026/longitudinal-student-academic-record-system-lidm-plan` (main): feat: add Machine Learning system design an</i>
+  <i>• Push 1 commit ke `lsar-lidm-2026/longitudinal-student-academic-record-system-lidm` (main): fix: build on VPS instead of GHCR pull (avoids auth issues)
+• Push 1 commit ke `lsar-lidm-2026/longitudinal-student-academic-record-system-lidm-plan` (main): refactor: update database compatibility from MySQ</i>
 </p>
 
 <!--AI_ACTIVITY_END-->
