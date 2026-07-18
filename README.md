@@ -57,8 +57,8 @@
 <!--AI_ACTIVITY_START-->
 
 <p align="center">
-  <i>• Push 1 commit ke `lsar-lidm-2026/longitudinal-student-academic-record-system-lidm` (main): fix: build on VPS instead of GHCR pull (avoids auth issues)
-• Push 1 commit ke `lsar-lidm-2026/longitudinal-student-academic-record-system-lidm-plan` (main): refactor: update database compatibility from MySQ</i>
+  <i>• Push 1 commit ke `lsar-lidm-2026/longitudinal-student-academic-record-system-lidm` (main): fix: include prisma/seed.ts in Docker image + auto-seed on deploy
+• Push 1 commit ke `asepharyana/asepharyana-hub` (master): fix: add LSAR routes, fix default TLS cert (asephstech.pem → asepharyana.my.id.pem</i>
 </p>
 
 <!--AI_ACTIVITY_END-->
