@@ -57,8 +57,8 @@
 <!--AI_ACTIVITY_START-->
 
 <p align="center">
-  <i>• Push 1 commit ke `lsar-lidm-2026/longitudinal-student-academic-record-system-lidm` (main): fix: include prisma/seed.ts in Docker image + auto-seed on deploy
-• Push 1 commit ke `asepharyana/asepharyana-hub` (master): fix: add LSAR routes, fix default TLS cert (asephstech.pem → asepharyana.my.id.pem</i>
+  <i>• Push 1 commit ke `lsar-lidm-2026/longitudinal-student-academic-record-system-lidm` (main): feat: enhance class listing and dashboard summary for teacher role with active year filtering
+• Push 1 commit ke `asepharyana/asepharyana-hub` (master): fix: add LSAR routes, fix default TLS cert (asephstech</i>
 </p>
 
 <!--AI_ACTIVITY_END-->
