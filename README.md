@@ -57,7 +57,7 @@
 <!--AI_ACTIVITY_START-->
 
 <p align="center">
-  <i>• Push 1 commit ke `lsar-lidm-2026/longitudinal-student-academic-record-system-lidm` (main): feat: enhance class listing and dashboard summary for teacher role with active year filtering
+  <i>• Push 1 commit ke `lsar-lidm-2026/longitudinal-student-academic-record-system-lidm` (main): feat: optimize data fetching in ClassesPage by conditionally loading users based on user role
 • Push 1 commit ke `asepharyana/asepharyana-hub` (master): fix: add LSAR routes, fix default TLS cert (asephstech</i>
 </p>
 
