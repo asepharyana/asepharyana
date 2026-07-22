@@ -57,8 +57,9 @@
 <!--AI_ACTIVITY_START-->
 
 <p align="center">
-  <i>• Push 1 commit ke `asepharyana/asepharyana-hub` (main): refactor(infra): update Traefik configuration references and remove obsolete traefik.yaml
-• Push 1 commit ke `asepharyana/asepharyana-hub-scraper` (main): feat: full clean architecture refactor — domain → application → infrastructure → present</i>
+  <i>• Push 1 commit ke `asepharyana/asepharyana-hub` (main): fix: include all compose files for dependency resolution on selective deploy
+• Push 1 commit ke `asepharyana/asepharyana-hub-scraper` (main): fix: update notify-parent target to asepharyana/asepharyana-hub
+• Tutup PR: &quot;&quot; di `asepharyana/asepha</i>
 </p>
 
 <!--AI_ACTIVITY_END-->
