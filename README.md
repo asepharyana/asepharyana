@@ -57,9 +57,9 @@
 <!--AI_ACTIVITY_START-->
 
 <p align="center">
-  <i>• Push 1 commit ke `asepharyana/asepharyana-hub` (main): chore: update hub submodule to 6b725f3
-• Push 1 commit ke `asepharyana/asepharyana-hub-hub` (main): feat: update layout and page components with personalized content and new UI structure
-• Push 1 commit ke `asepharyana/asepharyana-hub-scraper`</i>
+  <i>• Push 1 commit ke `asepharyana/asepharyana-hub` (main): chore: remove lidm routes from file config — now via Docker labels
+• Push 1 commit ke `lsar-lidm-2026/longitudinal-student-academic-record-system-lidm` (main): fix: add Traefik routing labels and HOSTNAME=0.0.0.0 for Docker auto-discovery
+• Pu</i>
 </p>
 
 <!--AI_ACTIVITY_END-->
