@@ -57,9 +57,9 @@
 <!--AI_ACTIVITY_START-->
 
 <p align="center">
-  <i>• Push 1 commit ke `asepharyana/asepharyana-hub` (main): fix(deploy): use 'docker compose config --services' for reliable service name extraction
-• Push 1 commit ke `asepharyana/asepharyana-hub-guide` (main): fix: restore full clean-code and clean-architecture descriptions with MANDATORY prefix
-• Pu</i>
+  <i>• Push 1 commit ke `asepharyana/asepharyana-hub` (main): fix(infra): replace short -S flags with long --system/--ingroup in hub Dockerfile
+• Push 1 commit ke `asepharyana/asepharyana-hub-tools` (main): ci: add workflow_dispatch to notify-parent for manual triggering
+• Push 1 commit ke `asepharyana/a</i>
 </p>
 
 <!--AI_ACTIVITY_END-->
