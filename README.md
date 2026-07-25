@@ -57,9 +57,9 @@
 <!--AI_ACTIVITY_START-->
 
 <p align="center">
-  <i>• Push 1 commit ke `asepharyana/asepharyana-hub` (main): feat(infra): update tools submodule with PDF split/compress frontend
-• Push 1 commit ke `asepharyana/asepharyana-hub-tools` (main): feat: update PDF tool pages with interactive options, promote split/compress to phase 1
-• Push 1 commit ke `ase</i>
+  <i>• Push 1 commit ke `asepharyana/asepharyana-hub` (main): fix(deploy): use 'docker compose config --services' for reliable service name extraction
+• Push 1 commit ke `asepharyana/asepharyana-hub-guide` (main): fix: restore full clean-code and clean-architecture descriptions with MANDATORY prefix
+• Pu</i>
 </p>
 
 <!--AI_ACTIVITY_END-->
