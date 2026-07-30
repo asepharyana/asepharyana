@@ -57,9 +57,8 @@
 <!--AI_ACTIVITY_START-->
 
 <p align="center">
-  <i>• Push 1 commit ke `asepharyana/asepharyana-hub` (main): fix(infra): remove buffer/compress from llm-api for real SSE streaming
-• Push 1 commit ke `asepharyana/asepharyana-hub-llm-api` (master): fix(stream): add anti-buffer headers for real SSE streaming
-• Push 6 commits ke `asepharyana/asepharyana-</i>
+  <i>• Push 3 commits ke `asepharyana/asepharyana-hub` (main): feat(infra): Nix build for hub app, systemd deployment; chore: ignore Nix build result symlink; feat(infra): Nix build for scraper, GitHub Actions workflow
+• Push 1 commit ke `asepharyana/asepharyana-hub-llm-api` (master): fix(stream): add an</i>
 </p>
 
 <!--AI_ACTIVITY_END-->
