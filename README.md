@@ -57,9 +57,9 @@
 <!--AI_ACTIVITY_START-->
 
 <p align="center">
-  <i>• Push 1 commit ke `asepharyana/asepharyana-hub` (main): chore(deps): bump the github-actions group across 1 directory with 3 updates (#9)
-• Push 1 commit ke `asepharyana/asepharyana-hub-scraper` (main): fix(config): remove list_separator, breaks string fields
-• Push 1 commit ke `asepharyana/asephar</i>
+  <i>• Push 1 commit ke `asepharyana/asepharyana-hub` (main): ci(otel): add logs pipeline to otel-collector (OTLP /v1/logs 404 fix)
+• Push 1 commit ke `asepharyana/Booster-role` (main): ci: migrate deploy to Nix (flake + systemd via GitHub Actions)
+• Push 1 commit ke `lsar-lidm-2026/longitudinal-student-</i>
 </p>
 
 <!--AI_ACTIVITY_END-->
