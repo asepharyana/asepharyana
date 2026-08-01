@@ -57,9 +57,9 @@
 <!--AI_ACTIVITY_START-->
 
 <p align="center">
-  <i>• Push 1 commit ke `asepharyana/asepharyana-hub` (main): perf(infra): traefik response speed - HTTP/3 + backend conn pooling
-• Push 1 commit ke `asepharyana/Booster-role` (main): ci: migrate deploy to Nix (flake + systemd via GitHub Actions)
-• Push 1 commit ke `lsar-lidm-2026/longitudinal-student-ac</i>
+  <i>• Push 1 commit ke `asepharyana/Booster-role` (main): fix(nix): restrict flake to x86_64-linux (nixpkgs 26.11 dropped darwin)
+• Push 1 commit ke `asepharyana/zeavis-edu` (main): fix(nix): restrict flake to x86_64-linux (nixpkgs 26.11 dropped darwin)
+• Push 1 commit ke `lsar-lidm-2026/longitudinal-st</i>
 </p>
 
 <!--AI_ACTIVITY_END-->
