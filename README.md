@@ -58,10 +58,9 @@
 <!--AI_ACTIVITY_START-->
 
 <p align="center">
-  <i>• Push 1 commit ke `asepharyana/asepharyana-hub` (main): chore: update llm-api to 344bc195fa95
-• Push 1 commit ke `asepharyana/zeavis-edu` (main): docs: sync remaining .md to 4000s infra
-• Push 1 commit ke `asepharyana/TeleUploader` (main): docs: sync remaining .md to 4000s infra
-• Push 1 commit ke </i>
+  <i>• Push 1 commit ke `asepharyana/asepharyana-hub` (main): chore(infra): scraper OTEL env drop-in (OTLP endpoint 127.0.0.1:4317)
+• Push 1 commit ke `asepharyana/asepharyana-hub-hub` (main): fix(dashboard): replace Docker/Jaeger with systemd + local Prometheus
+• Push 1 commit ke `asepharyana/zeavis-edu</i>
 </p>
 
 <!--AI_ACTIVITY_END-->
