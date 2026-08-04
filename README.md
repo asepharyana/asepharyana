@@ -58,9 +58,9 @@
 <!--AI_ACTIVITY_START-->
 
 <p align="center">
-  <i>• Push 1 commit ke `asepharyana/Booster-role` (main): ci: fix Nix GC cleanup job SSH key secret for Booster-role
-• Push 1 commit ke `lsar-lidm-2026/longitudinal-student-academic-record-system-lidm` (main): ci: fix Nix GC cleanup job SSH key pattern for lidm
-• Push 1 commit ke `asepharyana/zeavis-edu</i>
+  <i>• Push 1 commit ke `asepharyana/GMW` (main): fix(moderation): remove manual reanalyze triggers — auto-recovery only
+• Push 1 commit ke `asepharyana/Booster-role` (main): ci: fix Nix GC cleanup job SSH key secret for Booster-role
+• Push 1 commit ke `lsar-lidm-2026/longitudinal-student-academic-record</i>
 </p>
 
 <!--AI_ACTIVITY_END-->
