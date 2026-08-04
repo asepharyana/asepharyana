@@ -58,9 +58,9 @@
 <!--AI_ACTIVITY_START-->
 
 <p align="center">
-  <i>• Push 1 commit ke `asepharyana/GMW` (main): fix(moderation): remove manual reanalyze triggers — auto-recovery only
-• Push 1 commit ke `asepharyana/Booster-role` (main): ci: fix Nix GC cleanup job SSH key secret for Booster-role
-• Push 1 commit ke `lsar-lidm-2026/longitudinal-student-academic-record</i>
+  <i>• Push 1 commit ke `asepharyana/asepharyana-hub` (main): fix(infra): imphnen site block — SPA :5173 + API /v1 → :4099 (was 525: no block on live caddy)
+• Push 1 commit ke `asepharyana/pr-agent-server` (main): fix: health watchdog false 504s — Caddy header timeout + per-model logic
+• Push 1 commit ke</i>
 </p>
 
 <!--AI_ACTIVITY_END-->
