@@ -58,9 +58,9 @@
 <!--AI_ACTIVITY_START-->
 
 <p align="center">
-  <i>• Push 1 commit ke `asepharyana/asepharyana-hub` (main): fix(infra): imphnen site block — SPA :5173 + API /v1 → :4099 (was 525: no block on live caddy)
-• Push 1 commit ke `asepharyana/pr-agent-server` (main): fix: health watchdog false 504s — Caddy header timeout + per-model logic
-• Push 1 commit ke</i>
+  <i>• Push 1 commit ke `asepharyana/GMW` (main): fix(voice): proper shadcn select dropdowns + top reactors leaderboard
+• Push 1 commit ke `asepharyana/asepharyana-hub` (main): fix(infra): sync Caddyfile.prod with live — add dashboard.asepharyana.my.id block
+• Push 1 commit ke `asepharyana/pr-agent-serve</i>
 </p>
 
 <!--AI_ACTIVITY_END-->
