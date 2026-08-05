@@ -58,9 +58,9 @@
 <!--AI_ACTIVITY_START-->
 
 <p align="center">
-  <i>• Push 1 commit ke `asepharyana/GMW` (main): fix(voice): proper shadcn select dropdowns + top reactors leaderboard
+  <i>• Push 1 commit ke `asepharyana/GMW` (main): fix(backend): force-exit failsafe so shutdown never hangs
 • Push 1 commit ke `asepharyana/asepharyana-hub` (main): fix(infra): sync Caddyfile.prod with live — add dashboard.asepharyana.my.id block
-• Push 1 commit ke `asepharyana/pr-agent-serve</i>
+• Push 1 commit ke `asepharyana/pr-agent-server` (main): f</i>
 </p>
 
 <!--AI_ACTIVITY_END-->
