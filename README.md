@@ -58,9 +58,9 @@
 <!--AI_ACTIVITY_START-->
 
 <p align="center">
-  <i>• Push 1 commit ke `asepharyana/GMW` (main): fix(backend): force-exit failsafe so shutdown never hangs
-• Push 1 commit ke `asepharyana/asepharyana-hub` (main): fix(infra): sync Caddyfile.prod with live — add dashboard.asepharyana.my.id block
-• Push 1 commit ke `asepharyana/pr-agent-server` (main): f</i>
+  <i>• Push 1 commit ke `asepharyana/asepharyana-hub` (main): firewall: whitelist TCPShield proxy ranges untuk port 25565 (Minecraft)
+• Push 1 commit ke `asepharyana/GMW` (main): fix(gateway): music/screen playback heads — read yt-dlp headers from stderr, drop no-simulate
+• Push 1 commit ke `asepharyana/</i>
 </p>
 
 <!--AI_ACTIVITY_END-->
