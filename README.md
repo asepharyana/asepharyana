@@ -58,9 +58,8 @@
 <!--AI_ACTIVITY_START-->
 
 <p align="center">
-  <i>• Push 1 commit ke `asepharyana/GMW` (main): fix(voice): screen share GoLive died instantly — neutralize node-av custom ffmpeg filters
-• Push 1 commit ke `asepharyana/asepharyana-hub` (main): firewall: whitelist TCPShield proxy ranges untuk port 25565 (Minecraft)
-• Push 1 commit ke `asepharyana/pr-a</i>
+  <i>• Push 12 commits ke `asepharyana/GMW` (main): spike: minimal N-API libdatachannel binding — WebRTC handshake proven; spike: add addTrack + TrackWrap to libdatachannel-min binding; spike: expose libdatachannel media packetizer chain via Track
+• Push 1 commit ke `asepharyana/asepharyana-hub` (main): </i>
 </p>
 
 <!--AI_ACTIVITY_END-->
