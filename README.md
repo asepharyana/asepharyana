@@ -58,7 +58,7 @@
 <!--AI_ACTIVITY_START-->
 
 <p align="center">
-  <i>• Push 1 commit ke `asepharyana/GMW` (main): fix(goLive): gateway crash on screenshare stop — unhandledRejection during teardown
+  <i>• Push 1 commit ke `asepharyana/GMW` (main): feat(glossary): implement term glossary for LLM moderation with caching and extraction logic
 • Push 1 commit ke `asepharyana/asepharyana-hub` (main): firewall: whitelist TCPShield proxy ranges untuk port 25565 (Minecraft)</i>
 </p>
 
