@@ -58,7 +58,7 @@
 <!--AI_ACTIVITY_START-->
 
 <p align="center">
-  <i>• Push 1 commit ke `asepharyana/GMW` (main): fix(goLive): retry VIDEO(op12)/SPEAKING(op5) opcodes until ws OPEN — broken shared-screen video
+  <i>• Push 1 commit ke `asepharyana/GMW` (main): fix(goLive): pace demuxer with -re + bounded frame-drop (was: audio patah, 8s lag)
 • Push 1 commit ke `asepharyana/asepharyana-hub` (main): firewall: whitelist TCPShield proxy ranges untuk port 25565 (Minecraft)</i>
 </p>
 
