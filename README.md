@@ -58,7 +58,7 @@
 <!--AI_ACTIVITY_START-->
 
 <p align="center">
-  <i>• Push 1 commit ke `asepharyana/GMW` (main): fix(goLive): remove syncStream — synthetic PTS timebases make A/V sync deadlock</i>
+  <i>• Push 1 commit ke `asepharyana/GMW` (main): fix(voice): separate Mic and Listen state (were both bound to listen)</i>
 </p>
 
 <!--AI_ACTIVITY_END-->
