@@ -58,7 +58,7 @@
 <!--AI_ACTIVITY_START-->
 
 <p align="center">
-  <i>• Push 1 commit ke `asepharyana/GMW` (main): feat(frontend): rebuild as Ambient/WebGL console with all pages + command palette</i>
+  <i>• Push 1 commit ke `asepharyana/GMW` (main): feat: surface AI analysis duration across gateway, backend, and FE</i>
 </p>
 
 <!--AI_ACTIVITY_END-->
