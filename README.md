@@ -58,7 +58,7 @@
 <!--AI_ACTIVITY_START-->
 
 <p align="center">
-  <i>• Push 1 commit ke `asepharyana/GMW` (main): perf(ai-moderation): pack more messages per LLM request (fewer API calls when busy)</i>
+  <i>• Push 1 commit ke `asepharyana/GMW` (main): perf(ai-moderation): remove per-user reputation from analysis context</i>
 </p>
 
 <!--AI_ACTIVITY_END-->
