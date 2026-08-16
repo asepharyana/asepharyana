@@ -58,7 +58,7 @@
 <!--AI_ACTIVITY_START-->
 
 <p align="center">
-  <i>• Push 6 commits ke `asepharyana/GMW` (main): refactor(gateway): compact AI analysis system prompt, preserve all rules; refactor(gateway): strip boilerplate fields from few-shot examples; perf(gateway): hoist correctedExamples query out of retry closure</i>
+  <i>• Push 1 commit ke `asepharyana/GMW` (main): perf(ai-moderation): pack more messages per LLM request (fewer API calls when busy)</i>
 </p>
 
 <!--AI_ACTIVITY_END-->
