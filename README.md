@@ -58,7 +58,7 @@
 <!--AI_ACTIVITY_START-->
 
 <p align="center">
-  <i>• Push 1 commit ke `asepharyana/GMW` (main): fix(auto-delete): guard nickname reset on role hierarchy + surface LLM parse errors</i>
+  <i>• Push 1 commit ke `asepharyana/GMW` (main): perf(ai-moderation): compact system prompt + memoize build + hoist vision pass</i>
 </p>
 
 <!--AI_ACTIVITY_END-->
