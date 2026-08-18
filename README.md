@@ -58,7 +58,7 @@
 <!--AI_ACTIVITY_START-->
 
 <p align="center">
-  <i>• Push 1 commit ke `asepharyana/GMW` (main): refactor(gateway): remove user reputation feature entirely</i>
+  <i>• Push 1 commit ke `asepharyana/GMW` (main): feat(gmw): public features #7-14 — scam domains, top channels, hourly heatmap, category drill-down, coverage stats, channel culture glossary, term KB, edit history</i>
 </p>
 
 <!--AI_ACTIVITY_END-->
