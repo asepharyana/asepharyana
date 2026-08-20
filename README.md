@@ -58,8 +58,9 @@
 <!--AI_ACTIVITY_START-->
 
 <p align="center">
-  <i>• Push 1 commit ke `asepharyana/mcpedia` (main): docs: add Phase 12 (MCP client + layout overhaul) to PHASES.md
-• Push 3 commits ke `asepharyana/pr-agent-server` (main): improve: add README, .editorconfig, fix fallback models in setup_all.py, update .gitignore; feat: update models to claude-opus-5/s</i>
+  <i>• Push 1 commit ke `asepharyana/mcpedia` (main): feat(core): dynamic custom frontmatter fields for CTF writeup metadata
+• Push 1 commit ke `asepharyana/GMW` (main): fix(materi): type-cast tags as string[] to satisfy tsc (CI gate)
+• Push 3 commits ke `asepharyana/pr-agent-server` (main): improve: add</i>
 </p>
 
 <!--AI_ACTIVITY_END-->
