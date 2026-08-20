@@ -58,8 +58,8 @@
 <!--AI_ACTIVITY_START-->
 
 <p align="center">
-  <i>• Push 1 commit ke `asepharyana/mcpedia` (main): fix(web): fix doubled section prefix in doc links (404 on click)
-• Push 3 commits ke `asepharyana/pr-agent-server` (main): improve: add README, .editorconfig, fix fallback models in setup_all.py, update .gitignore; feat: update models to claude-opus-5</i>
+  <i>• Push 1 commit ke `asepharyana/mcpedia` (main): docs: add Phase 12 (MCP client + layout overhaul) to PHASES.md
+• Push 3 commits ke `asepharyana/pr-agent-server` (main): improve: add README, .editorconfig, fix fallback models in setup_all.py, update .gitignore; feat: update models to claude-opus-5/s</i>
 </p>
 
 <!--AI_ACTIVITY_END-->
