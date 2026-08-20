@@ -58,8 +58,8 @@
 <!--AI_ACTIVITY_START-->
 
 <p align="center">
-  <i>• Push 1 commit ke `asepharyana/mcpedia` (main): fix(embeddings): defer EMBED_* validation to embed() runtime, not constructor
-• Push 1 commit ke `asepharyana/GMW` (main): feat(gmw): public features #7-14 — scam domains, top channels, hourly heatmap, category drill-down, coverage stats, channel cult</i>
+  <i>• Push 1 commit ke `asepharyana/mcpedia` (main): deploy: add mcpedia-web.service systemd unit (port 4016)
+• Push 1 commit ke `asepharyana/GMW` (main): feat(gmw): public features #7-14 — scam domains, top channels, hourly heatmap, category drill-down, coverage stats, channel culture glossary, term KB</i>
 </p>
 
 <!--AI_ACTIVITY_END-->
