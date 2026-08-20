@@ -58,8 +58,8 @@
 <!--AI_ACTIVITY_START-->
 
 <p align="center">
-  <i>• Push 1 commit ke `asepharyana/mcpedia` (main): deploy: add mcpedia-web.service systemd unit (port 4016)
-• Push 1 commit ke `asepharyana/GMW` (main): feat(gmw): public features #7-14 — scam domains, top channels, hourly heatmap, category drill-down, coverage stats, channel culture glossary, term KB</i>
+  <i>• Push 1 commit ke `asepharyana/mcpedia` (main): fix(web): fix doubled section prefix in doc links (404 on click)
+• Push 3 commits ke `asepharyana/pr-agent-server` (main): improve: add README, .editorconfig, fix fallback models in setup_all.py, update .gitignore; feat: update models to claude-opus-5</i>
 </p>
 
 <!--AI_ACTIVITY_END-->
