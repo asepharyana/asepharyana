@@ -58,9 +58,9 @@
 <!--AI_ACTIVITY_START-->
 
 <p align="center">
-  <i>• Push 1 commit ke `asepharyana/mcpedia` (main): docs: update PHASES.md Phase 13 — fully dynamic value-based field styling + preserved types
+  <i>• Push 1 commit ke `asepharyana/mcpedia` (main): fix: CI build steps — use 'cd X &amp;&amp; bun run' not 'bun --cwd'
 • Push 1 commit ke `asepharyana/GMW` (main): fix(materi): type-cast tags as string[] to satisfy tsc (CI gate)
-• Push 3 commits ke `asepharyana/pr-agent-server`</i>
+• Push 3 commits ke `asepharyana/pr-agent-server` (main): improve: add README, .e</i>
 </p>
 
 <!--AI_ACTIVITY_END-->
