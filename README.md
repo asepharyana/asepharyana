@@ -58,9 +58,9 @@
 <!--AI_ACTIVITY_START-->
 
 <p align="center">
-  <i>• Push 1 commit ke `asepharyana/mcpedia` (main): fix: bundle @mcpedia/* deps in nix build, fix runtime module resolution
-• Push 1 commit ke `asepharyana/GMW` (main): fix(materi): type-cast tags as string[] to satisfy tsc (CI gate)
-• Push 3 commits ke `asepharyana/pr-agent-server` (main): improve: ad</i>
+  <i>• Push 1 commit ke `asepharyana/GMW` (main): fix(frontend): pindah aria-label mic meter ke wrapper role=status
+• Push 1 commit ke `asepharyana/mcpedia` (main): feat(export): redesign PDF view for formal publication styling without colors or watermarks
+• Push 3 commits ke `asepharyana/pr-agent-server</i>
 </p>
 
 <!--AI_ACTIVITY_END-->
