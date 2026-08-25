@@ -58,10 +58,10 @@
 <!--AI_ACTIVITY_START-->
 
 <p align="center">
-  <i>• Push 1 commit ke `asepharyana/asepharyana-hub-hub` (main): feat: update dependabot config
-• Push 1 commit ke `asepharyana/asep` (master): feat: add dependabot config (npm)
-• Push 1 commit ke `asepharyana/asepharyana-hub-scraper` (main): feat: add dependabot config (npm auto-deps)
-• Push 1 commit k</i>
+  <i>• Push 1 commit ke `asepharyana/GMW` (main): feat: dependabot config with multi-dir (backend, gateway, frontend)
+• Push 1 commit ke `asepharyana/proxy-bun` (master): feat: update dependabot config
+• Push 1 commit ke `asepharyana/mcpedia` (main): feat: update dependabot config
+• Push 1 commit ke `ase</i>
 </p>
 
 <!--AI_ACTIVITY_END-->
