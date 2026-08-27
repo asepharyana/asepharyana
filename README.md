@@ -58,9 +58,9 @@
 <!--AI_ACTIVITY_START-->
 
 <p align="center">
-  <i>• Push 1 commit ke `asepharyana/GMW` (main): fix: replace global username if also offensive after nickname reset
-• Push 1 commit ke `asepharyana/asepharyana-hub` (dependabot/npm_and_yarn/development-672df4be3e): chore: sync lockfile for dependabot update
-• Push 1 commit ke `asepharyana/zeavis-edu` (</i>
+  <i>• Push 1 commit ke `asepharyana/llm-api` (master): ci: deploy via Attic binary cache (attic.asepharyana.my.id) instead of ssh copy
+• Push 1 commit ke `asepharyana/infra` (main): ci: validate Caddyfile with real caddy binary instead of naive brace count
+• Push 1 commit ke `asepharyana/scraper` (main)</i>
 </p>
 
 <!--AI_ACTIVITY_END-->
