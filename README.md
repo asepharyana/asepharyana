@@ -58,9 +58,7 @@
 <!--AI_ACTIVITY_START-->
 
 <p align="center">
-  <i>• Push 1 commit ke `asepharyana/llm-api` (master): ci: deploy via Attic binary cache (attic.asepharyana.my.id) instead of ssh copy
-• Push 1 commit ke `asepharyana/infra` (main): ci: validate Caddyfile with real caddy binary instead of naive brace count
-• Push 1 commit ke `asepharyana/scraper` (main)</i>
+  <i>Wah, hari ini sibuk banget ngulik kode</i>
 </p>
 
 <!--AI_ACTIVITY_END-->
