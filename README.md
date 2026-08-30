@@ -58,7 +58,7 @@
 <!--AI_ACTIVITY_START-->
 
 <p align="center">
-  <i>Wah, hari ini produktif banget nih!</i>
+  <i>Wah, hari ini produktif banget nambah fitur rekam</i>
 </p>
 
 <!--AI_ACTIVITY_END-->
