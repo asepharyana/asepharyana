@@ -58,7 +58,7 @@
 <!--AI_ACTIVITY_START-->
 
 <p align="center">
-  <i>Sibuk banget hari ini ngebut</i>
+  <i>Hari ini sibuk banget beresin *bug</i>
 </p>
 
 <!--AI_ACTIVITY_END-->
