@@ -58,7 +58,7 @@
 <!--AI_ACTIVITY_START-->
 
 <p align="center">
-  <i>longitudinal-student-academic-record-system</i>
+  <i>Hari ini sibuk banget ngebut 🚀</i>
 </p>
 
 <!--AI_ACTIVITY_END-->
