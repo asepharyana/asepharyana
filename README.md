@@ -58,7 +58,7 @@
 <!--AI_ACTIVITY_START-->
 
 <p align="center">
-  <i>Wah, sibuk banget nge-push kode baru hari</i>
+  <i>longitudinal-student-academic-record-system</i>
 </p>
 
 <!--AI_ACTIVITY_END-->
