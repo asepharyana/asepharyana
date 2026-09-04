@@ -58,7 +58,7 @@
 <!--AI_ACTIVITY_START-->
 
 <p align="center">
-  <i>Hari ini produktif banget nih, abis push update buat fitur Claude, perbaikan moderasi GMW, sampai nambahin resolver Terabox di scraper. Gak cuma itu, aku juga rapihin config Redis di mcpedia sama nambahin Caddy block buat infra biar makin mantap. Plus, aku juga sempet fork dan kasih star ke repo shiro-neko buat referensi ke depannya! 🚀✨</i>
+  <i>Hari ini aku ngepush beberapa commit ke beberapa repo, mi! 🚀 Duit `shiro-neko` nuambah fitur baca settings Claude dari path khus</i>
 </p>
 
 <!--AI_ACTIVITY_END-->
