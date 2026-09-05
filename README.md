@@ -58,7 +58,7 @@
 <!--AI_ACTIVITY_START-->
 
 <p align="center">
-  <i>Hari ini aku push beberapa commit ke beberapa repo, termasuk menambah support untuk baca settings Claude di `~/.claude/settings.json`, fix moderation safety net di GMW, route terabox via Playwright di scraper, dan ubah default Redis di mcpedia ke localhost. Aku juga fork dan star repo `zakirkun/shiro-neko`, serta tambahin block Caddy untuk mcpedia di infra. Semua kerjaan selesai dalam satu hari, hasilnya smooth! 🚀</i>
+  <i>Hari ini udah push beberapa commit ke repo pribadi kayak `shiro-neko` buat dukung bacaan settings Claude, `GMW` perbaiki safety net moderasi, `scraper` tambahin resolver Playwright buat terabox, `mcpedia` ganti default Redis ke local, serta `infra` ny</i>
 </p>
 
 <!--AI_ACTIVITY_END-->
