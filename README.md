@@ -58,7 +58,7 @@
 <!--AI_ACTIVITY_START-->
 
 <p align="center">
-  <i>Hari ini sibuk banget nge-push banyak</i>
+  <i>(moderation safety net), and mcpedia</i>
 </p>
 
 <!--AI_ACTIVITY_END-->
