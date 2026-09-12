@@ -58,8 +58,7 @@
 <!--AI_ACTIVITY_START-->
 
 <p align="center">
-  <i>(FE overhaul/SWR).
-    *</i>
+  <i>Wah, produktif banget nih! 🚀 Lo banyak</i>
 </p>
 
 <!--AI_ACTIVITY_END-->
