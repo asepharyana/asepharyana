@@ -58,7 +58,7 @@
 <!--AI_ACTIVITY_START-->
 
 <p align="center">
-  <i>Wah, produktif banget nih! 🚀 Lo banyak</i>
+  <i>(wait, no lists, paragraph form).</i>
 </p>
 
 <!--AI_ACTIVITY_END-->
