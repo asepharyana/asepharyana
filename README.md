@@ -58,7 +58,8 @@
 <!--AI_ACTIVITY_START-->
 
 <p align="center">
-  <i>Hari ini sibuk banget ngepush berbagai</i>
+  <i>(FE overhaul/SWR).
+    *</i>
 </p>
 
 <!--AI_ACTIVITY_END-->
