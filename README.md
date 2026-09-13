@@ -58,7 +58,7 @@
 <!--AI_ACTIVITY_START-->
 
 <p align="center">
-  <i>Wah, produktif banget nih! 🚀 Si A</i>
+  <i>Wah, produktif banget nih si Asep nge</i>
 </p>
 
 <!--AI_ACTIVITY_END-->
