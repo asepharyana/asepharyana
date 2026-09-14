@@ -58,7 +58,7 @@
 <!--AI_ACTIVITY_START-->
 
 <p align="center">
-  <i>bagian *backend* dan *frontend*, gua</i>
+  <i>Hari ini lumayan produktif nambahin</i>
 </p>
 
 <!--AI_ACTIVITY_END-->
