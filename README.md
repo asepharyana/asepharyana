@@ -59,7 +59,7 @@
 <!--AI_ACTIVITY_START-->
 
 <p align="center">
-  <i>Hari ini lumayan sibuk beresin berbagai repo,</i>
+  <i>*Idea 2 (TeleUploader):* Gas</i>
 </p>
 
 <!--AI_ACTIVITY_END-->
