@@ -59,7 +59,7 @@
 <!--AI_ACTIVITY_START-->
 
 <p align="center">
-  <i>Hari ini sibuk banget nge-push pem</i>
+  <i>test E2E LLM buat moderasi di</i>
 </p>
 
 <!--AI_ACTIVITY_END-->
