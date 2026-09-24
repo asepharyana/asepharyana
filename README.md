@@ -58,7 +58,7 @@
 <!--AI_ACTIVITY_START-->
 
 <p align="center">
-  <i>nextjs-template` (main):</i>
+  <i>Hari ini lumayan produktif n</i>
 </p>
 
 <!--AI_ACTIVITY_END-->
